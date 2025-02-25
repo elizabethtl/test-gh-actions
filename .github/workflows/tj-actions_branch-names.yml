@@ -15,3 +15,7 @@ jobs:
       - name: Get branch names.
         id: branch-names
         uses: tj-actions/branch-names@v6
+
+      - name: Output github values
+        run: |
+          echo "the base ref branch is ${{steps.branch-names.outputs.base_ref_branch}}"
