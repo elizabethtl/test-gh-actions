@@ -1,7 +1,9 @@
 name: Branch Name Check
 
 on:
-  push
+  push:
+    branches:
+      - main
 
 jobs:
   check-branch-name:
