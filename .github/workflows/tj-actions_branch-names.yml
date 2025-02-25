@@ -12,4 +12,4 @@ jobs:
 
       - name: Get branch names.
         id: branch-names
-        uses: tj-actions/branch-names@v5
+        uses: tj-actions/branch-names@v6
