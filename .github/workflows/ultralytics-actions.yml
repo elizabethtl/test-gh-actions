@@ -2,6 +2,7 @@ name: Ultralytics Actions
 run-name: Ultralytics Actions
 
 on:
+  push:
   issues:
     types: [opened]
   pull_request:
