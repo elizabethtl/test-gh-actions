@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Ultralytics Formatting
-        uses: ultralytics/actions@main
+        uses: ultralytics/actions@dfedf860ab4f9ded0c38d5496f3733d8fe0b311d
         with:
           token: ${{ secrets.GITHUB_TOKEN }} # automatically generated, do not modify
           labels: true # autolabel issues and PRs
