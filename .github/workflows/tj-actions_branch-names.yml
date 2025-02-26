@@ -1,10 +1,8 @@
 name: Branch Name Check
 
 on:
-  push:
-    branches:
-      - main
-
+  [push, create, pull_request]
+  
 jobs:
   check-branch-name:
     runs-on: ubuntu-latest
