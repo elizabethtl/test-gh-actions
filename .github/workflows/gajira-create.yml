@@ -1,0 +1,22 @@
+name: Log issue info
+run-name: Log issue info
+
+on:
+  [push, issues]
+
+jobs:
+  gajira-create-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create
+        id: create
+        uses: atlassian/gajira-create@v3
+        with:
+          project: GA
+          issuetype: Build
+          summary: Build completed for ${{ github.repository }}
+          description: Compare branch
+          fields: '{"customfield_10171": "test"}'
+      
+      - name: Log created issue
+        run: echo "Issue ${{ steps.create.outputs.issue }} was created"
