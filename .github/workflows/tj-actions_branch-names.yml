@@ -14,7 +14,7 @@ jobs:
 
       - name: Get branch names.
         id: branch-names
-        uses: tj-actions/branch-names@v8
+        uses: tj-actions/branch-names@2e5354c6733793113f416314375826df030ada23
 
       - name: Output github values
         run: |
