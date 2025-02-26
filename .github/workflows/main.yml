@@ -1,3 +1,6 @@
+name: My main test action
+run-name: My main test action
+
 on: [push]
 
 jobs:
