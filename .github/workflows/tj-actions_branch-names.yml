@@ -1,7 +1,10 @@
 name: Branch Name Check
 
 on:
-  [push, create, pull_request]
+  pull_request:
+    branches: [main]
+    types: [opened, closed]
+  pull_request_target:
   
 jobs:
   check-branch-name:
