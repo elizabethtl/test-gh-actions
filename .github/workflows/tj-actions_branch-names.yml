@@ -14,11 +14,11 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Get branch names.
-        id: branch-names
+        id: branch_names
         uses: tj-actions/branch-names@2e5354c6733793113f416314375826df030ada23
 
       - name: Output github values
         run: |
-          echo "the base ref branch is ${{steps.branch.outputs.base_ref_branch}}"
-          echo "the current branch is ${{steps.current_branch.outputs.current_branch}}"
-          echo "the is_tag is ${{steps.tag.outputs.tag}}"
+          echo "the base ref branch is ${{steps.branch_names.outputs.base_ref_branch}}"
+          echo "the current branch is ${{steps.branch_names.outputs.current_branch}}"
+          echo "the is_tag is ${{steps.branch_names.outputs.tag}}"
