@@ -19,5 +19,6 @@ jobs:
 
       - name: Output github values
         run: |
-          echo "the base ref branch is ${{steps.branch-names.outputs.base_ref_branch}}"
-          echo "the is_tag is ${{steps.branch-names.is_tag}}"
+          echo "the base ref branch is ${{steps.branch.outputs.base_ref_branch}}"
+          echo "the current branch is ${{steps.current_branch.outputs.current_branch}}"
+          echo "the is_tag is ${{steps.tag.outputs.tag}}"
